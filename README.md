@@ -9,3 +9,5 @@ https://github.com/prometheus/mysqld_exporter
 https://www.metricfire.com/
 
 https://github.com/shevyf/prom_on_k8s_howto
+
+AWS Documentation
