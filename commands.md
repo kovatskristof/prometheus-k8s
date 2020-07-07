@@ -81,3 +81,16 @@ Accessing MySQL instance:
 ```shell
     kubectl run -it --rm --image=mysql:5.6 --restart=Never mysql-client -- mysql -h mysql -ppassword
 ```
+
+I've enabled Slow query logging:
+
+```shell
+Kovatss-MacBook-Pro:~ kovatskristof$ kubectl run -it --rm --image=mysql:5.6 --restart=Never mysql-client -- mysql -h mysql -ppassword
+
+If you don't see a command prompt, try pressing enter.
+
+mysql> SET GLOBAL slow_query_log = 'ON';
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> 
+```
